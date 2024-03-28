@@ -14,10 +14,6 @@ import torch.optim as optim
 import time
 
 
-
-os.chdir("C:\Dev\VisualStudioCode\Python\Predict_Alzheimers\Pytorch_Brain_Classification")
-
-
 class Alzheimer_Dataset(Dataset):
     
     def __init__(self,csv_file: list, root_dir: list, transform=None):
@@ -72,10 +68,10 @@ class CNN(torch.nn.Module):
 
 
 # Defines the path to the training 
-csv_file_path = "C:\Dev\VisualStudioCode\Python\Predict_Alzheimers\Pytorch_Brain_Classification\data.csv"
+csv_file_path = "Pytorch_Brain_Classification\data.csv"
 
 # image directory paths
-root_dir = "C:\Dev\VisualStudioCode\Python\Predict_Alzheimers\Pytorch_Brain_Classification\data"
+root_dir = "Pytorch_Brain_Classification\data"
 
 
 # Hyperparameters
